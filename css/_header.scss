@@ -1,0 +1,284 @@
+.bg-photo,
+.wrapper {
+  background-color: $main-color;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 90%;
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      padding: 33px 5%;
+    }
+
+    &__item:first-child {
+      margin-left: 90%;
+    }
+
+    &__link {
+      display: block;
+      line-height: 150%;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: $primary-color;
+    }
+    &__link--active {
+      color: $secondary-color;
+    }
+    &__link:hover {
+      text-decoration: underline;
+    }
+  }
+  .menu__button {
+    padding: 13px 3%;
+    color: $primary-color;
+    background-color: $main-color;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $secondary-text-color;
+      border: 1px solid $secondary-text-color;
+    }
+  }
+
+  .bg-photo__title {
+    color: $primary-color;
+    @include font(600, 2.625rem, 160%);
+    padding: 112px 0 99px;
+    letter-spacing: 0.21px;
+    width: 100%;
+  }
+
+  .bg-photo__text {
+    color: $primary-color;
+    @include font(400, 1rem, 150%);
+    padding-bottom: 62px;
+  }
+
+  .bg-photo__btn {
+    padding: 15px 3%;
+    background-color: $secondary-color;
+    color: $secondary-text-color;
+    width: 26%;
+    @include font(700, 1rem, 150%);
+    letter-spacing: 0.16px;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #fff;
+      color: $secondary-color;
+    }
+  }
+
+  .bg-photo__link {
+    color: $primary-color;
+    text-decoration: none;
+    @include font(400, 1rem, 150%);
+    padding-left: 5%;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .bg-photo__link span {
+    position: relative;
+    top: 3px;
+  }
+}
+
+#toggle,
+.toggle {
+  display: none;
+}
+
+.toggle {
+  z-index: 2;
+}
+
+.bg-photo {
+  padding-bottom: 137px;
+
+  .wrap-img {
+    padding-top: 92px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrap-container {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap-container {
+    padding-top: 50px;
+  }
+
+  .bg-photo__btn {
+    position: relative;
+    left: 60px;
+    width: 100%;
+  }
+
+  .bg-photo__link {
+    position: relative;
+    top: -40px;
+    left: 280px;
+    // padding-left: 50%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    width: 95%;
+
+    .bg-photo__title,
+    .wrap-img {
+      padding-top: 0;
+    }
+
+    .bg-photo__btn {
+      position: relative;
+      left: 50px;
+      width: 100%;
+    }
+
+    .bg-photo__link {
+      position: relative;
+      top: -40px;
+      left: 270px;
+      // padding-left: 50%;
+    }
+
+    .bg-photo__link span {
+      position: relative;
+      top: -20px;
+      left: 175px;
+    }
+  }
+  .header {
+    &__logo {
+      display: none;
+    }
+
+    .menu {
+      width: 80vw;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .menu__button {
+      margin-top: -40px;
+      margin-right: 10px;
+    }
+
+    &__item {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__link {
+      width: 100%;
+
+      font-size: 4vw;
+    }
+    &__link--active {
+      color: $primary-color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      background-color: #e2e2e2;
+    }
+
+    &__item:hover {
+      width: 75vw;
+    }
+  }
+
+  .toggle {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #toggle:checked ~ .menu {
+    display: block;
+    opacity: 1;
+  }
+
+  .toggle::after {
+    content: '';
+    display: block;
+    width: 6vw;
+    height: 5vw;
+    margin: 1vw;
+    background: url('../imgs/toggle.png') no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+  }
+
+  .bg-photo {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .menu {
+    position: relative;
+    left: -250px;
+  }
+
+  .bg-photo__btn {
+    position: relative;
+    left: 60px;
+    width: 100%;
+  }
+
+  .bg-photo__link {
+    position: relative;
+    top: -40px;
+    left: 280px;
+    // padding-left: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    position: relative;
+    left: -250px;
+  }
+
+  .bg-photo__btn {
+    position: relative;
+    left: 60px;
+    width: 100%;
+  }
+
+  .bg-photo__link {
+    position: relative;
+    top: -40px;
+    left: 280px;
+    // padding-left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}
