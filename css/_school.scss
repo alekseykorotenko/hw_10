@@ -1,0 +1,182 @@
+$main-color: #3c486b;
+$primary-color: #fff;
+$secondary-color: #ef4343;
+$secondary-text-color: #282938;
+$additional-color: #f0f0f0;
+
+body {
+  background-color: $additional-color;
+}
+
+.school-overview__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15% 0;
+  max-height: 600px;
+  background: $main-color;
+}
+
+.school-overview__title {
+  font-size: 3.5rem;
+  padding: 1% 0;
+  color: $primary-color;
+}
+
+.school-overview__btn {
+  padding: 15px 0;
+  background-color: $secondary-color;
+  color: $secondary-text-color;
+  width: 10%;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.school-overview__btn:hover {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.school-overview__content {
+  max-width: 900px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 40px 0;
+  color: $primary-color;
+}
+
+.school-content__container {
+  height: auto;
+}
+
+.school-content__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.school-content__main-head {
+  font-size: 3rem;
+  text-align: center;
+  padding: 5% 0;
+}
+.school-content__main-article {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background: $primary-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 3%;
+}
+
+.school-content__main-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.school-content__main-article-text {
+  text-align: center;
+}
+
+.school-overview__btn-next {
+  display: flex;
+  padding: 15px 0;
+  background-color: $secondary-color;
+  color: $secondary-text-color;
+  width: 10%;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 150%;
+  border-radius: 5px;
+  justify-content: center;
+  text-decoration: none;
+  margin: 5% auto;
+}
+
+.school-overview__btn-next:hover {
+  background-color: $main-color;
+  color: $primary-color;
+}
+
+.school-content__second,
+.school-content__third {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 65%;
+  height: 300px;
+  margin: 6% auto;
+  background-color: $primary-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.school-content__second-content {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto 3%;
+}
+
+.school-content__second-img {
+  margin: auto 0 auto 45%;
+  max-width: 128px;
+  max-height: 128px;
+}
+
+.school-content__third-content {
+  margin: auto;
+}
+
+.school-content__third-title {
+  font-size: 3rem;
+  width: 80%;
+}
+
+.school-content__third-text {
+  font-size: 1rem;
+  width: 75%;
+}
+
+@media (max-width: 1024px) {
+  .school-content__main-article {
+    height: 150px;
+  }
+  .school-content__main-title {
+    font-size: 1.2rem;
+  }
+  .school-content__main-article-text {
+    font-size: 0.7rem;
+  }
+  .school-content__second {
+    max-width: 80%;
+  }
+  .school-content__second-title {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .school-content__second-img {
+    margin: auto 0 auto 30%;
+  }
+  .school-content__third-content {
+    width: 35%;
+  }
+  .school-content__third-title {
+    font-size: 1.3rem;
+  }
+  .school-content__third-text {
+    font-size: 0.8rem;
+  }
+}

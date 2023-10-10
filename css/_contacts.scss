@@ -1,0 +1,223 @@
+.contacts__wrapper {
+  background-color: $additional-color;
+}
+
+.contacts__container {
+  padding: 6% 0;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  .box {
+    padding: 6% 5%;
+    background-color: $primary-color;
+    .box__menu,
+    .form__block button {
+      border-radius: 15px;
+    }
+    .box__menu {
+      padding: 4% 8%;
+      background-color: $main-color;
+      .tabs__head {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tabs__caption {
+        // color: $primary-color;
+        @include font(400, 1rem, 125%);
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: $main-color;
+      }
+      .tabs__caption:hover {
+        color: $secondary-color;
+        text-decoration: underline;
+      }
+      .tabs__caption_active {
+        opacity: 1;
+      }
+    }
+    .tabs {
+      overflow: hidden;
+    }
+    .tabs__content {
+      display: none;
+    }
+    .tabs__content_active {
+      display: block;
+    }
+    .tabs__body {
+      margin-top: 20%;
+
+      .box__form {
+        font-size: 20px;
+        .form__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          @include font(400, 1.25rem, 160%);
+          span {
+            text-decoration: underline;
+          }
+        }
+        .form__block {
+          margin-top: 20%;
+          color: #737b7d;
+          border-top: 1px solid #737b7d;
+          input {
+            padding: 12px 5%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            @include font(400, 1rem, 160%);
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #737b7d;
+          }
+          .button--mod,
+          .form__check form {
+            @include font(400, 1rem, 100%);
+          }
+          .button--mod {
+            padding: 16px 0px;
+            margin-top: 15%;
+            width: 100%;
+            color: #000;
+            text-align: center;
+            @include font(700, 1.25rem, 160%);
+            text-transform: uppercase;
+            background-color: $secondary-color;
+          }
+          .form__check form {
+            padding-top: 5%;
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            gap: 2%;
+            input {
+              width: initial;
+              margin-right: 2%;
+            }
+            label {
+              width: 100%;
+            }
+          }
+          .form__container {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+          }
+        }
+      }
+      .socials {
+        padding: 0 10% 12%;
+        display: flex;
+        flex-direction: row;
+        .socials__item {
+          padding-right: 9%;
+          width: 30%;
+          display: flex;
+          gap: 30px;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: first baseline;
+        }
+        .socials__item--spec {
+          padding-right: 10%;
+          display: flex;
+          gap: 30px;
+          width: 30%;
+          justify-content: space-around;
+          align-items: first baseline;
+          -moz-column-count: 2;
+          column-count: 2;
+          .socials__item__column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+          }
+        }
+        .socials__text {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          padding: 40px 5%;
+          border-left: 3px solid $main-color;
+          span {
+            @include font(700, 1.25rem, 160%);
+          }
+        }
+      }
+    }
+  }
+  .item {
+    padding: 10% 4%;
+    background-color: $main-color;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    iframe {
+      width: 99%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .tabs__head {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tabs__head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .socials__item--spec {
+    flex-direction: column;
+  }
+}
+@media (min-width: 840px) {
+  .box,
+  .item {
+    width: 50%;
+  }
+  .box {
+    border-radius: 15px 0 0 15px;
+  }
+  .item {
+    border-radius: 0 15px 15px 0;
+  }
+}
+@media (max-width: 840px) {
+  .form__container img {
+    width: 60%;
+  }
+  .contacts__container {
+    flex-direction: column;
+  }
+  .socials__item--spec {
+    flex-direction: row;
+  }
+  .box,
+  .item {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .box {
+    border-radius: 15px 15px 0 0;
+  }
+  .item {
+    border-radius: 0 0 15px 15px;
+  }
+}

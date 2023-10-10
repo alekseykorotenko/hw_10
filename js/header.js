@@ -145,16 +145,16 @@ template.innerHTML = `
             <label for="toggle" class="toggle"> </label>
             <ul class="menu">
               <li class="menu__item">
-                <a href="#" class="menu__link menu__link--active">Головна</a>
+                <a href="../index.html" class="menu__link menu__link--active">Головна</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Школа</a>
+                <a href="./school.html" class="menu__link">Школа</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Курси</a>
+                <a href="./courses.html" class="menu__link">Курси</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Контакти</a>
+                <a href="./contacts.html" class="menu__link">Контакти</a>
               </li>
             </ul>
           </div>
