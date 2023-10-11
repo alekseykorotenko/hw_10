@@ -137,11 +137,6 @@
     padding-top: 50px;
   }
 }
-@media screen and (max-width: 600px) {
-  // .wrap-container {
-  //   padding-top: 50px;
-  // }
-}
 @media screen and (max-width: 840px) {
   .container {
     width: 95%;
@@ -310,29 +305,4 @@
   .bg-photo {
     padding-bottom: 50px;
   }
-}
-
-@media screen and (max-width: 960px) {
-  // .menu {
-  //   position: relative;
-  //   left: -250px;
-  // }
-}
-
-@media screen and (max-width: 1024px) {
-  // .menu {
-  //   position: relative;
-  //   // left: -250px;
-  // }
-}
-@media screen and (max-width: 1280px) {
-  // .menu-wrap {
-  //   margin-right: 16%;
-  // }
-
-  // .container {
-  //   .bg-photo__btn {
-  //     width: 50%;
-  //   }
-  // }
 }

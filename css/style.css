@@ -1170,76 +1170,86 @@ body {
   background-color: #3c486b;
   width: 100%;
 }
-.footer__wrapper .container {
+
+.container {
   display: flex;
   width: 95%;
 }
-.footer__wrapper .container .footer__contacts {
+.container .footer__contacts {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  width: 100%;
 }
-.footer__wrapper .container .footer__contacts .contacts__container {
+.container .footer__contacts .contacts__block {
   display: flex;
   flex-direction: column;
   padding: 24px 0 0px;
 }
-.footer__wrapper .container .footer__contacts .contacts__container--spec {
+.container .footer__contacts .contacts__block--spec {
   flex-direction: row;
 }
-.footer__wrapper .container .footer__contacts .contacts__container--spec .footer__social {
-  display: flex;
-  justify-content: center;
+.container .footer__contacts .contacts__block--spec .footer__social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-.footer__wrapper .container .footer__contacts .contacts__container--spec .footer__social .social__group {
-  padding-right: 46px;
+.container .footer__contacts .contacts__block--spec .footer__social .social__item {
+  margin-right: 5%;
 }
-.footer__wrapper .container .footer__contacts .footer__slogan {
+.container .footer__contacts .contacts__block--spec .footer__social .social__link img {
+  width: 60%;
+}
+.container .footer__contacts .footer__slogan {
   padding-bottom: 205px;
   color: #fff;
 }
-.footer__wrapper .container .footer__contacts .contacts {
+.container .footer__contacts .contacts {
   display: flex;
   background-color: #ef4343;
   border-radius: 5px 5px 0px 0px;
 }
-.footer__wrapper .container .footer__contacts .contacts__list {
+.container .footer__contacts .contacts__list {
   display: flex;
   flex-direction: column;
 }
-.footer__wrapper .container .footer__contacts .contacts__list .contacts__name {
+.container .footer__contacts .contacts__list .contacts__name {
   padding: 16px 160px 6px 30px;
   letter-spacing: 0.09px;
   color: var(--Dark-blue, #282938);
 }
-.footer__wrapper .container .footer__contacts .contacts__list .contacts__info {
+.container .footer__contacts .contacts__list .contacts__info {
   padding: 0 30px 15px 30px;
   color: var(--Dark-blue, #282938);
 }
-.footer__wrapper .container .footer__contacts .contacts__nav .nav__title {
+.container .footer__contacts .contacts__list .contacts__info a {
+  color: var(--Dark-blue, #282938);
+  text-decoration: none;
+}
+.container .footer__contacts .contacts__nav .nav__title {
   color: #fff;
   letter-spacing: 0.1px;
   padding: 64px 74px 19px 0;
 }
-.footer__wrapper .container .footer__contacts .contacts__nav .nav__title--mod {
-  padding: 64px 74px 19px 0;
+.container .footer__contacts .contacts__nav .nav__title--mod {
+  text-align: center;
+  margin-left: 15%;
 }
-.footer__wrapper .container .footer__contacts .contacts__nav .nav__item {
+.container .footer__contacts .contacts__nav .nav__item {
   padding: 0 0 4px 0;
 }
-.footer__wrapper .container .footer__contacts .contacts__nav .nav__item .nav__link {
+.container .footer__contacts .contacts__nav .nav__item .nav__link {
   color: #fff;
   text-decoration: none;
   letter-spacing: 0.09px;
 }
-.footer__wrapper .container .footer__contacts .contacts__nav .nav__item .nav__link:hover {
+.container .footer__contacts .contacts__nav .nav__item .nav__link:hover {
   text-decoration: underline;
 }
-.footer__wrapper .contacts__nav {
+
+.contacts__nav {
   display: flex;
-  margin-left: 50%;
 }
-.footer__wrapper .contacts__nav .contacts__menu {
+.contacts__nav .contacts__menu {
   margin-left: 9%;
   display: flex;
   flex-direction: column;
@@ -1249,13 +1259,19 @@ body {
   padding: 27px 0;
 }
 
-@media screen and (max-width: 960px) {
-  .contacts__container--spec {
-    display: none;
+@media screen and (max-width: 600px) {
+  .footer__contacts {
+    justify-content: center;
   }
 }
-@media screen and (max-width: 1024px) {
-  .contacts__container--spec {
-    padding: 0;
+@media screen and (max-width: 840px) {
+  .contacts__nav {
+    display: none;
+  }
+  .container .footer__contacts {
+    justify-content: center;
+  }
+  .container .footer__contacts .contacts {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
