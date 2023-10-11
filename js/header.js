@@ -5,7 +5,7 @@ template.innerHTML = `
       <div class="wrapper">
         <div class="wrapper__container container">
           <div class="header__logo logo">
-          <a href="./index.html"><svg
+          <a href="../index.html"><svg
           width="250"
           height="66"
           viewBox="0 0 250 66"
@@ -142,7 +142,9 @@ template.innerHTML = `
           </div>
           <div class="nav menu-wrap">
             <input type="checkbox" id="toggle" />
-            <label for="toggle" class="toggle"> </label>
+            <label for="toggle" class="toggle"> 
+            <span> </span>
+            </label>
             <ul class="menu">
               <li class="menu__item">
                 <a href="../index.html" class="menu__link menu__link--active">Головна</a>
@@ -158,10 +160,12 @@ template.innerHTML = `
               </li>
             </ul>
           </div>
-          <button class="menu__button">Логін</button>
+        
         </div>
       </div>
     </header>
 `;
-
+{
+  /* <button class="menu__button">Логін</button> */
+}
 document.body.appendChild(template.content);

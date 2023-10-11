@@ -2,90 +2,92 @@
   background-color: $main-color;
   width: 100%;
   .container {
-    width: 100%;
-  }
-
-  .footer__contacts {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    .contacts__container {
+    width: 95%;
+
+    .footer__contacts {
       display: flex;
-      flex-direction: column;
-      padding: 24px 0 0px;
-    }
-
-    .contacts__container--spec {
-      flex-direction: row;
-
-      .footer__social {
-        display: flex;
-        justify-content: center;
-        .social__group {
-          padding-right: 46px;
-        }
-      }
-    }
-
-    .footer__slogan {
-      //   @include font(400, 1rem, 150%);
-      padding-bottom: 205px;
-      color: $primary-color;
-    }
-
-    .contacts {
-      display: flex;
-      background-color: $secondary-color;
-
-      border-radius: 5px 5px 0px 0px;
-
-      &__list {
+      justify-content: space-between;
+      // width: 50%;
+      margin: 0 auto;
+      .contacts__container {
         display: flex;
         flex-direction: column;
+        padding: 24px 0 0px;
+      }
 
-        .contacts__name {
-          //   @include font(500, 1.125rem, 150%);
-          padding: 16px 160px 6px 30px;
-          letter-spacing: 0.09px;
-          color: var(--Dark-blue, $secondary-text-color);
-        }
+      .contacts__container--spec {
+        flex-direction: row;
 
-        .contacts__info {
-          //   @include font(400, 1rem, 150%);
-          padding: 0 30px 15px 30px;
-          color: var(--Dark-blue, $secondary-text-color);
+        .footer__social {
+          display: flex;
+          justify-content: center;
+          .social__group {
+            padding-right: 46px;
+          }
         }
       }
 
-      &__nav {
-        .nav__title {
-          //   @include font(500, 1.25rem, 150%);
-          color: $primary-color;
-          letter-spacing: 0.1px;
-          padding: 64px 74px 19px 0;
-        }
+      .footer__slogan {
+        //   @include font(400, 1rem, 150%);
+        padding-bottom: 205px;
+        color: $primary-color;
+      }
 
-        .nav__title--mod {
-          padding: 64px 74px 19px 0;
-        }
+      .contacts {
+        display: flex;
+        background-color: $secondary-color;
+        // width: 70%;
+        border-radius: 5px 5px 0px 0px;
 
-        .nav__item {
-          padding: 0 0 4px 0;
-          .nav__link {
-            // @include font(400, 1.125rem, 150%);
-            color: $primary-color;
-            text-decoration: none;
+        &__list {
+          display: flex;
+          flex-direction: column;
+
+          .contacts__name {
+            //   @include font(500, 1.125rem, 150%);
+            padding: 16px 160px 6px 30px;
             letter-spacing: 0.09px;
+            color: var(--Dark-blue, $secondary-text-color);
+          }
 
-            &:hover {
-              text-decoration: underline;
+          .contacts__info {
+            //   @include font(400, 1rem, 150%);
+            padding: 0 30px 15px 30px;
+            color: var(--Dark-blue, $secondary-text-color);
+          }
+        }
+
+        &__nav {
+          .nav__title {
+            //   @include font(500, 1.25rem, 150%);
+            color: $primary-color;
+            letter-spacing: 0.1px;
+            padding: 64px 74px 19px 0;
+          }
+
+          .nav__title--mod {
+            padding: 64px 74px 19px 0;
+          }
+
+          .nav__item {
+            padding: 0 0 4px 0;
+            .nav__link {
+              // @include font(400, 1.125rem, 150%);
+              color: $primary-color;
+              text-decoration: none;
+              letter-spacing: 0.09px;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
       }
     }
   }
+
   .contacts__nav {
     display: flex;
     margin-left: 50%;
