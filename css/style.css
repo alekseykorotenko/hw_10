@@ -697,7 +697,6 @@ button {
 .contacts__container .box .tabs__body .socials .socials__item--spec {
   padding-right: 10%;
   display: flex;
-  gap: 30px;
   width: 30%;
   justify-content: space-around;
   align-items: first baseline;
@@ -759,6 +758,9 @@ button {
   .item {
     border-radius: 0 15px 15px 0;
   }
+  .socials__item--spec {
+    gap: 30px;
+  }
 }
 @media (max-width: 840px) {
   .form__container img {
@@ -769,6 +771,7 @@ button {
   }
   .socials__item--spec {
     flex-direction: row;
+    gap: 10%;
   }
   .box,
   .item {
