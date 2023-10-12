@@ -727,7 +727,7 @@ button {
   flex-direction: column;
   padding: 15% 0;
   max-height: 600px;
-  background: url(/imgs/workplace.jpeg) repeat fixed 100%;
+  background: url(../imgs/workplace.jpeg) no-repeat fixed 100%;
 }
 
 .school-overview__title {
