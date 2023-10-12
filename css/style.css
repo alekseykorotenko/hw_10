@@ -720,10 +720,6 @@ button {
     border-radius: 0 0 15px 15px;
   }
 }
-body {
-  background-color: #f0f0f0;
-}
-
 .school-overview__container {
   display: flex;
   justify-content: center;
@@ -731,7 +727,7 @@ body {
   flex-direction: column;
   padding: 15% 0;
   max-height: 600px;
-  background: #3c486b;
+  background: url(/imgs/workplace.jpeg) repeat fixed 100%;
 }
 
 .school-overview__title {
@@ -742,7 +738,7 @@ body {
 
 .school-overview__btn {
   padding: 15px 0;
-  background-color: #ef4343;
+  background-color: #f45050;
   color: #282938;
   width: 10%;
   font-weight: 700;
@@ -755,7 +751,7 @@ body {
 
 .school-overview__btn:hover {
   background-color: #fff;
-  color: #ef4343;
+  color: #f45050;
 }
 
 .school-overview__content {
@@ -763,7 +759,8 @@ body {
   text-align: center;
   font-size: 1rem;
   padding: 40px 0;
-  color: #fff;
+  color: #f0f0f0;
+  background-color: rgba(7, 7, 7, 0.6);
 }
 
 .school-content__container {
@@ -811,7 +808,7 @@ body {
 .school-overview__btn-next {
   display: flex;
   padding: 15px 0;
-  background-color: #ef4343;
+  background-color: #f45050;
   color: #282938;
   width: 10%;
   font-weight: 700;
@@ -1002,6 +999,38 @@ body {
     cursor: pointer;
   }
 }
+@media screen and (max-width: 480px) {
+  .school-content__main-head {
+    font-size: 0.9rem;
+  }
+  .school-overview__container {
+    background: url(/imgs/workplace.jpeg) repeat fixed 50%;
+  }
+  .school-content__lightbox-title {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .school-overview__btn-next {
+    font-size: 0.7rem;
+  }
+  .school-content__second {
+    display: flex;
+    flex-direction: column;
+  }
+  .school-content__second-content {
+    width: 100%;
+    padding-right: 7%;
+  }
+  .school-content__second-title,
+  .school-content__second-text {
+    font-size: 0.65rem;
+    text-align: center;
+  }
+  .school-content__second-img {
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+}
 body {
   background-color: #f0f0f0;
 }
@@ -1042,7 +1071,7 @@ body {
   color: #282938;
 }
 .inner__link-menu:hover {
-  color: #ef4343;
+  color: #f45050;
 }
 
 .section-cours {
@@ -1083,7 +1112,7 @@ body {
 }
 .section-cours--spec .section-cours__box .section-cours__heading a:hover,
 .section-cours--edit .section-cours__box .section-cours__heading a:hover {
-  color: #ef4343;
+  color: #f45050;
 }
 .section-cours--spec .section-cours__box .section-cours__info-text,
 .section-cours--edit .section-cours__box .section-cours__info-text {
@@ -1100,7 +1129,7 @@ body {
   margin-top: 4%;
 }
 .section-cours__bl .cuors-like {
-  color: #ef4343;
+  color: #f45050;
   background-color: #fff;
   margin: 0 0 2% 4%;
 }
@@ -1119,30 +1148,16 @@ body {
   width: 13%;
   display: block;
   padding: 1%;
-  border: 1.5px solid #ef4343;
+  border: 1.5px solid #f45050;
   border-radius: 5px;
   margin: 0 auto;
   cursor: pointer;
 }
 
 .button-more:hover {
-  background-color: #ef4343;
+  background-color: #f45050;
 }
 
-@media screen and (max-width: 480px) {
-  .inner__list-menu,
-  .section-cours--spec,
-  .section-cours--edit {
-    display: flex;
-    flex-direction: column;
-  }
-  .section-cours__box {
-    margin-bottom: 5%;
-  }
-  .button-more {
-    width: 15%;
-  }
-}
 @media screen and (max-width: 600px) {
   .inner__list-menu,
   .section-cours--spec,
@@ -1206,6 +1221,24 @@ body {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .inner__list-menu,
+  .section-cours--spec,
+  .section-cours--edit {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-cours__box {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .button-more {
+    width: 15%;
+  }
+  .section-cours__heading a {
+    font-size: 1rem;
+  }
+}
 .footer__wrapper {
   background-color: #3c486b;
   width: 100%;
@@ -1245,7 +1278,7 @@ body {
 }
 .container .footer__contacts .contacts {
   display: flex;
-  background-color: #ef4343;
+  background-color: #f45050;
   border-radius: 5px 5px 0px 0px;
 }
 .container .footer__contacts .contacts__list {

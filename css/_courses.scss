@@ -118,21 +118,6 @@ body {
   background-color: $secondary-color;
 }
 
-@media screen and (max-width: 480px) {
-  .inner__list-menu,
-  .section-cours--spec,
-  .section-cours--edit {
-    display: flex;
-    flex-direction: column;
-  }
-  .section-cours__box {
-    margin-bottom: 5%;
-  }
-  .button-more {
-    width: 15%;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .inner__list-menu,
   .section-cours--spec,
@@ -197,5 +182,24 @@ body {
   .section-cours__box {
     width: 65%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inner__list-menu,
+  .section-cours--spec,
+  .section-cours--edit {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-cours__box {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .button-more {
+    width: 15%;
+  }
+  .section-cours__heading a {
+    font-size: 1rem;
   }
 }
