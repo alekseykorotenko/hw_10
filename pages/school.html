@@ -6,6 +6,12 @@
     <title>IT-school</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
 
     <meta
       name="description"
@@ -72,7 +78,7 @@
 
         <section class="school-content__lightbox">
           <h3 class="school-content__lightbox-title">Роботи наших студентів</h3>
-          <div class="school-content__lightbox-gallery">
+          <!-- <div class="school-content__lightbox-gallery">
             <img
               src="../imgs/inexas-small.png"
               alt="Inexas"
@@ -101,10 +107,55 @@
               >
               <img class="lightbox-image" src="" alt="Изображение в Lightbox" />
             </div>
+          </div> -->
+          <div class="contain">
+            <div class="light-div">
+              <div class="light-box">
+                <img
+                  class="light-img"
+                  data-num="0"
+                  src="../imgs/inexas.png"
+                  alt="inexas"
+                  srcset=""
+                />
+              </div>
+              <div class="light-box">
+                <img
+                  class="light-img"
+                  data-num="1"
+                  src="../imgs/ordertime.png"
+                  alt="ordertime"
+                  srcset=""
+                />
+              </div>
+              <div class="light-box">
+                <img
+                  class="light-img"
+                  data-num="2"
+                  src="../imgs/rivly.png"
+                  alt="rivly"
+                  srcset=""
+                />
+              </div>
+            </div>
+            <div class="popup" id="popup">
+              <img id="popimg" data-pop="" src="" alt="" />
+              <span class="arrow-left" id="prev"
+                ><i class="fas fa-backward"></i
+              ></span>
+              <span class="arrow-right" id="next"
+                ><i class="fas fa-forward"></i
+              ></span>
+              <span class="close" id="close"
+                ><i class="far fa-times-circle"></i
+              ></span>
+            </div>
           </div>
         </section>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/slider.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/scripts.js"></script>
   </body>
