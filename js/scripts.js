@@ -52,3 +52,17 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
   container.classList.remove('right-panel-active');
 });
+
+// LIGHTBOX
+
+function openLightbox(img) {
+  let lightbox = document.getElementById('Lightbox');
+  let lightboxImage = lightbox.querySelector('.lightbox-image');
+
+  lightbox.style.display = 'block';
+  lightboxImage.src = img.getAttribute('data-large');
+}
+
+function closeLightbox() {
+  document.getElementById('Lightbox').style.display = 'none';
+}
