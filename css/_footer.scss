@@ -121,6 +121,19 @@
 @media screen and (max-width: 600px) {
   .footer__contacts {
     justify-content: center;
+    // align-items: center;
+  }
+  .container {
+    .footer__contacts {
+      justify-content: center;
+
+      .contacts__block {
+        align-items: center;
+      }
+      .contacts {
+        justify-content: center;
+      }
+    }
   }
 }
 
@@ -132,6 +145,9 @@
     .footer__contacts {
       justify-content: center;
 
+      .contacts__block {
+        align-items: center;
+      }
       .contacts {
         justify-content: center;
       }

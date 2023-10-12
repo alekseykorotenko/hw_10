@@ -1303,6 +1303,15 @@ body {
   .footer__contacts {
     justify-content: center;
   }
+  .container .footer__contacts {
+    justify-content: center;
+  }
+  .container .footer__contacts .contacts__block {
+    align-items: center;
+  }
+  .container .footer__contacts .contacts {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 840px) {
   .contacts__nav {
@@ -1310,6 +1319,9 @@ body {
   }
   .container .footer__contacts {
     justify-content: center;
+  }
+  .container .footer__contacts .contacts__block {
+    align-items: center;
   }
   .container .footer__contacts .contacts {
     justify-content: center;
