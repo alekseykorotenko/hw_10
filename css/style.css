@@ -592,7 +592,12 @@ button {
   text-transform: uppercase;
   background-color: #f45050;
 }
-.contacts__container .box .tabs__body .box__form .form__block .form__check form {
+.contacts__container .box .tabs__body .box__form .form__block .button--mod:hover {
+  background-color: #fff;
+  color: #f45050;
+  border: 1px solid #f45050;
+}
+.contacts__container .box .tabs__body .box__form .form__check form {
   padding-top: 5%;
   margin: 0 auto;
   width: 80%;
@@ -600,14 +605,14 @@ button {
   align-items: center;
   gap: 2%;
 }
-.contacts__container .box .tabs__body .box__form .form__block .form__check form input {
+.contacts__container .box .tabs__body .box__form .form__check form input {
   width: initial;
   margin-right: 2%;
 }
-.contacts__container .box .tabs__body .box__form .form__block .form__check form label {
+.contacts__container .box .tabs__body .box__form .form__check form label {
   width: 100%;
 }
-.contacts__container .box .tabs__body .box__form .form__block .form__container {
+.contacts__container .box .tabs__body .box__form .form__container {
   padding-top: 30px;
   display: flex;
   flex-direction: row;
@@ -615,12 +620,12 @@ button {
   align-items: center;
   gap: 5%;
 }
-.contacts__container .box .tabs__body .socials {
+.contacts__container .box .socials {
   padding: 0 10% 12%;
   display: flex;
   flex-direction: row;
 }
-.contacts__container .box .tabs__body .socials .socials__item {
+.contacts__container .box .socials .socials__item {
   padding-right: 9%;
   width: 30%;
   display: flex;
@@ -629,7 +634,7 @@ button {
   justify-content: space-around;
   align-items: first baseline;
 }
-.contacts__container .box .tabs__body .socials .socials__item--spec {
+.contacts__container .box .socials .socials__item--spec {
   padding-right: 10%;
   display: flex;
   width: 30%;
@@ -638,12 +643,12 @@ button {
   -moz-column-count: 2;
   column-count: 2;
 }
-.contacts__container .box .tabs__body .socials .socials__item--spec .socials__item__column {
+.contacts__container .box .socials .socials__item--spec .socials__item__column {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.contacts__container .box .tabs__body .socials .socials__text {
+.contacts__container .box .socials .socials__text {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -651,19 +656,20 @@ button {
   padding: 40px 5%;
   border-left: 3px solid #3c486b;
 }
-.contacts__container .box .tabs__body .socials .socials__text span {
+.contacts__container .box .socials .socials__text span {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 160%;
 }
-.contacts__container .item {
+
+.item {
   padding: 10% 4%;
   background-color: #3c486b;
   display: flex;
   align-items: normal;
   justify-content: center;
 }
-.contacts__container .item iframe {
+.item iframe {
   width: 99%;
 }
 
@@ -728,6 +734,7 @@ button {
   padding: 15% 0;
   max-height: 600px;
   background: url(../imgs/workplace.png) repeat fixed 100%;
+  background-size: cover;
 }
 
 .school-overview__title {
